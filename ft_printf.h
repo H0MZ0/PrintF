@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 19:45:26 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/24 12:06:14 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/24 13:49:20 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
 

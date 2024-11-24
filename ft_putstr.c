@@ -6,13 +6,13 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 23:12:22 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/23 18:13:37 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/24 14:05:29 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
 	int	i;
 
@@ -24,4 +24,5 @@ void	ft_putstr(char *str)
 		write (1, &str[i], 1);
 		i++;
 	}
+	return (i);
 }

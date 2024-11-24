@@ -6,13 +6,33 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 23:31:32 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/24 11:56:23 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/24 14:03:21 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr(int n)
+int	nbr_len(int n)
+{
+	int	i;
+
+	i = 0;
+	if (n >= 0 && n <= 9)
+		return (0);	
+	if (n < 0)
+	{
+		i = 1;
+		n *= -1;
+	}
+	while (n)
+	{
+		i++;
+		n = n / 10;
+	}
+	return (i);
+}
+
+int	ft_putnbr(int n)
 {
 	if (!n)
 		return;
@@ -33,4 +53,5 @@ void	ft_putnbr(int n)
 		ft_putnbr(n / 10);
 		ft_putnbr(n % 10);
 	}
+	return (nbr_len(n));
 }
