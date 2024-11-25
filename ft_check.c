@@ -6,7 +6,7 @@
 /*   By: hakader <hakader@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 10:38:37 by hakader           #+#    #+#             */
-/*   Updated: 2024/11/24 14:22:15 by hakader          ###   ########.fr       */
+/*   Updated: 2024/11/25 11:30:35 by hakader          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void    ft_check(const char type)
         if (type == 'x')
             ft_puthexa();
         if (type == 'X')
+            ft_puthexa();
         if (type == '%')
     }
 }
